@@ -69,6 +69,13 @@ function convertRideshareArray(array) {
     */
     // PLACE YOUR CODE BELOW
 
+  var obj = {
+    rideShareId: element.id,
+    numberMembers: element.members.length
+  }
+  return obj
+
+
     // PLACE YOUR CODE ABOVE
   })
 

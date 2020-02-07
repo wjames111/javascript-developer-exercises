@@ -11,6 +11,17 @@ function reverseLetters(str) {
   // PLACE YOUR CODE BELOW
 
 
+  let wordArray = str.split(' ')
+  let sentence = wordArray.map(item => {
+    let splitWord = item.split('')
+    let reverseWord = splitWord.reverse()
+    let joinWord = reverseWord.join('')
+    return joinWord
+    });
+  let finalSentence = sentence.join(' ')
+  return finalSentence
+
+
   // PLACE YOUR CODE ABOVE
 }
 

@@ -9,6 +9,11 @@ function createGetFunction(elementToReturn) {
   // PLACE YOUR CODE BELOW
 
 
+  return function(arr){
+    return arr[elementToReturn-1]
+  }
+
+
   // PLACE YOUR CODE ABOVE
 }
 

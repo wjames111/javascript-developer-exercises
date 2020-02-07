@@ -7,6 +7,11 @@ let totalOfOddNumbers = numberList.reduce(function(accumulator, currentValue) {
   // of only the odd values (3, 7, 19, etc). Do not alter any other code.
   // PLACE YOUR CODE BELOW
 
+
+  currentValue % 2 !== 0? accumulator += currentValue : accumulator
+  return accumulator
+
+
   // PLACE YOUR CODE ABOVE
 }, 0)
 

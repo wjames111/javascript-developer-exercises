@@ -22,6 +22,13 @@ before the next comment block.
 */
 // PLACE YOUR CODE BELOW
 
+
+let metaList = words.map((item) =>
+  item.slice(1, 3)
+)
+ wordList = metaList.join(', ')
+
+
 // PLACE YOUR CODE ABOVE
 /*
 When run with "node 2_extracting_words.js" you should see the following on

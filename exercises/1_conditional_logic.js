@@ -13,6 +13,36 @@ function paintMixer(color1, color2) {
   */
   // PLACE YOUR CODE BELOW
 
+
+  let colors = [color1, color2]
+
+  if(colors.includes("red")){
+    if(colors.includes("blue")){
+      return 'purple';
+    }
+    else if(colors.includes("green")){
+      return 'brown';
+    }
+    else if(colors.includes("yellow")){
+      return 'orange';
+    }
+    else if(colors[0] === colors[1]){
+      return 'red'
+    }
+    else {
+      return 'unknown';
+    }
+  }
+  else if(colors.includes("blue")){
+    if(colors.includes("yellow")){
+      return 'green';
+    }
+  }
+  else {
+    return 'unknown';
+  }
+
+
   // PLACE YOUR CODE ABOVE
 }
 
