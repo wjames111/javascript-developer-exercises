@@ -8,6 +8,7 @@ let totalOfOddNumbers = numberList.reduce(function(accumulator, currentValue) {
   // PLACE YOUR CODE BELOW
 
 
+  // check if number is odd, if so add it to accumulator
   currentValue % 2 !== 0? accumulator += currentValue : accumulator
   return accumulator
 

@@ -1,4 +1,4 @@
-function paintMixer(color1, color2) {
+function paintMixer(color1 = 'unknown', color2 = 'unknown') {
   /*
   Add code here that will take the two string params and
   return a value as to what those two colors would create when mixed:
@@ -14,30 +14,36 @@ function paintMixer(color1, color2) {
   // PLACE YOUR CODE BELOW
 
 
-  let colors = [color1, color2]
+  // add parameters to new array
+  let colorsToMix = [color1, color2]
 
-  if(colors.includes("red")){
-    if(colors.includes("blue")){
+  // checks if the color red is included in colorsToMix array
+  if (colorsToMix.includes("red")){
+    // checks for the other color value in colorsToMix array
+    if (colorsToMix.includes("blue")){
       return 'purple';
     }
-    else if(colors.includes("green")){
+    else if (colorsToMix.includes("green")){
       return 'brown';
     }
-    else if(colors.includes("yellow")){
+    else if (colorsToMix.includes("yellow")){
       return 'orange';
     }
-    else if(colors[0] === colors[1]){
-      return 'red'
+    else if (colorsToMix[0] === colorsToMix[1]){
+      return 'red';
     }
+    // if other color is not recognized
     else {
       return 'unknown';
     }
   }
-  else if(colors.includes("blue")){
-    if(colors.includes("yellow")){
+  // checks if the color blue is included in colorsToMix array
+  else if (colorsToMix.includes("blue")){
+    if (colorsToMix.includes("yellow")){
       return 'green';
     }
   }
+  // if neither blue nor red is included in colorsToMix, a color is not recognized
   else {
     return 'unknown';
   }

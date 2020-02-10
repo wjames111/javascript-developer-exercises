@@ -23,10 +23,12 @@ before the next comment block.
 // PLACE YOUR CODE BELOW
 
 
+// create a new array containing the meta word inside each item in the words array
 let metaList = words.map((item) =>
   item.slice(1, 3)
 )
- wordList = metaList.join(', ')
+// convert metaList into a comma seperated string and assign it to wordList variable
+wordList = metaList.join(', ')
 
 
 // PLACE YOUR CODE ABOVE

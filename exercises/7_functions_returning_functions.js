@@ -9,8 +9,10 @@ function createGetFunction(elementToReturn) {
   // PLACE YOUR CODE BELOW
 
 
+  // higher order function that returns array
   return function(arr){
-    return arr[elementToReturn-1]
+    // return specified element in array. Subtract 1 to account for number 0
+    return arr[elementToReturn - 1]
   }
 
 

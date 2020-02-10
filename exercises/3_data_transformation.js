@@ -69,11 +69,14 @@ function convertRideshareArray(array) {
     */
     // PLACE YOUR CODE BELOW
 
-  var obj = {
+
+  // return new objects from initialArray that only use neccisary keys needed in expected array
+  var rideShareElement = {
     rideShareId: element.id,
     numberMembers: element.members.length
   }
-  return obj
+
+  return rideShareElement
 
 
     // PLACE YOUR CODE ABOVE

@@ -10,14 +10,19 @@ let statement = 'Penn Mutual sells life insurance'
 function reverseLetters(str) {
   // PLACE YOUR CODE BELOW
 
-
+  // convert words from string to an array
   let wordArray = str.split(' ')
   let sentence = wordArray.map(item => {
+    // convert letters from words to an array
     let splitWord = item.split('')
+    // reverse letter order
     let reverseWord = splitWord.reverse()
+    // convert word back to string
     let joinWord = reverseWord.join('')
     return joinWord
     });
+
+  // convert array back to string
   let finalSentence = sentence.join(' ')
   return finalSentence
 
